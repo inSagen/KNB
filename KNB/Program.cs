@@ -12,6 +12,12 @@
         var compChoose = rnd.Next(1, 4);
         Console.WriteLine("\nПожалуйста, выберите свой знак: ");
         int playerChoose = Convert.ToInt32(Console.ReadLine());
+
+        if (playerChoose < 1 || playerChoose > 3)
+        {
+            Console.WriteLine("Неверный ввод!");
+            continue;
+        }
         
         switch (playerChoose)
         {
